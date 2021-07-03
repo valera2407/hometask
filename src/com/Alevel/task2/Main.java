@@ -1,4 +1,4 @@
-package com.Alevel;
+package com.Alevel.task2;
 
 public class Main {
 
