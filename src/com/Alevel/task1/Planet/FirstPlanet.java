@@ -4,8 +4,8 @@ import com.Alevel.task1.Planet.AbstractPlanet;
 
 public class FirstPlanet  extends AbstractPlanet {
     @Override
-    public void genGraw() {
-        setGraw("3,7 м/с²");
+    public void genGravity() {
+        setGravity("3,7 м/с²");
     }
 
     @Override

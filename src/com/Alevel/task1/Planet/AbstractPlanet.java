@@ -1,14 +1,13 @@
 package com.Alevel.task1.Planet;
 
-import com.Alevel.task1.Planet.Planet;
 
 public abstract class AbstractPlanet implements Planet {
-    private String graw;
+    private String gravity;
     private String name;
     private String weight;
 
-    protected void setGraw(String graw) {
-        this.graw = graw;
+    protected void setGravity(String gravity) {
+        this.gravity = gravity;
     }
 
     public void setName(String name) {
@@ -20,19 +19,19 @@ public abstract class AbstractPlanet implements Planet {
     }
 
     @Override
-    public void genInfo(){
+    public void generationInfo(){
         genWeight();
-        genGraw();
+        genGravity();
         genName();
     }
 
-    public abstract void genGraw();
+    public abstract void genGravity();
     public abstract void genName();
     public abstract void genWeight();
 
 
-    public String getGraw() {
-        return graw;
+    public String getGravity() {
+        return gravity;
     }
 
     public String getWeight() {
@@ -45,7 +44,7 @@ public abstract class AbstractPlanet implements Planet {
 
     @Override
     public void outWeight() {
-        System.out.println("Вес планеты составляет" + getGraw());
+        System.out.println("Вес планеты составляет" + getGravity());
     }
 
     @Override
@@ -55,14 +54,14 @@ public abstract class AbstractPlanet implements Planet {
 
     @Override
     public void outGravity() {
-        System.out.println("Ускорение свободного падения на этой планете составляет " + getGraw());
+        System.out.println("Ускорение свободного падения на этой планете составляет " + getGravity());
     }
 
     @Override
-    public void allInfo() {
-        System.out.println(getName() + " название данной планеты." +
-                "Ускорение свободного падения на этой планете составляет " + getGraw() +
-                ".Вес планеты составляет " + getWeight());
+    public void showInfo() {
+        System.out.println("'" + getName() + "'" + " назвывают эту планету." +
+                "Ускорение свободного падения на ней составляет " + getGravity() +
+                ".Весит она " + getWeight());
         System.out.println("----------------------------------------");
     }
 }

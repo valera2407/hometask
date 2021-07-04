@@ -4,6 +4,6 @@ public interface Planet {
     void outGravity();
     void outName();
     void outWeight();
-    void allInfo();
-    void genInfo();
+    void showInfo();
+    void generationInfo();
 }
